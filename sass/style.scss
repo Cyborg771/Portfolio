@@ -7,3 +7,13 @@
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
+
+.container {
+  @include container;
+  @include susy-grid-background;
+}
+
+a {
+    text-decoration:none;
+    color:#000;
+}

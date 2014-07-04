@@ -5,23 +5,52 @@
 
 /* Variables -------------------------------------------------------------- */
 
-$primary-color:#a0e281;
-$primary-accent-dark:#8ec973;
-$primary-accent-light:#b2fc90;
+$primary-color:#e16d39;
+$primary-accent-dark:#c76032;
+$primary-accent-light:#ff7c41;
 
 $nav-height:70px;
+$side-padding:150px;
 
 /* Body ------------------------------------------------------------------- */
 
 body {
-    background-color:$primary-color;
     font-family:lato;
-    padding-top:$nav-height;
+    min-width:940px;
 }
 
 a {
-    text-decoration:none;
     color:inherit;
+}
+
+h1, h2, h3 {
+    font-weight:800;
+}
+
+h1 {
+    font-size:2em;
+    font-weight:500;
+}
+
+h2 {
+    font-size:1.5em;
+}
+
+h3 {
+    font-size:1.17em;
+}
+
+.content {
+    padding:50px $side-padding;
+    
+    h1 {
+        margin-bottom:40px;
+    }
+}
+
+.table-container {
+    display:table;
+    table-layout:fixed;
 }
 
 /* Navigation ------------------------------------------------------------- */
@@ -30,57 +59,275 @@ nav {
     background-color:$primary-color;
     position:fixed;
     top:0px;
+    left:0px;
     width:100%;
     height:$nav-height;
-    text-align:center;
+    z-index:1;
     
     //Two tone border, box-shadow for dark line and border-bottom for light line
     box-shadow:inset 0 -1px 0 $primary-accent-dark;
     border-bottom:1px solid $primary-accent-light;
+
+    #links {
+        display:inline-block;
+        font-weight:300;
+        font-size:24px;
+        margin-left:$side-padding;
+    
+        li {
+            padding:22px;
+        }
+    }
+
+    #social {
+        position:absolute;
+        top:0px;
+        right:0px;
+        color:#FFF;
+        font-size:1em;
+        padding-right:8px;
+
+        li {
+            padding:18px 10px 18px 0px;
+        }
+    }
+
+    li {
+        display:inline-block;
+        color:#FFF;
+        
+        a {
+            text-decoration:none;
+            @include single-transition(color, 0.5s);
+        }
+
+        a:hover {
+            color:#ff996c;
+        }
+    }
 }
 
-nav #links {
-    display:inline-block;
-    font-weight:300;
-    font-size:24px;
+/* Header ------------------------------------------------------------------*/
+
+#header {
+    background:url('../images/congruent_pentagon.png') center center fixed;
+    padding:0 $side-padding;
+    
+    #title {
+        position:relative;
+        
+        #title-text {
+            display:inline-block;
+            text-align:center;
+            position:relative;
+            bottom:10px;
+            color:#FFF;
+        }
+        
+        h1 {
+            font-weight:300;
+            font-size:8em;
+            margin:0;
+        }
+        
+        h2 {
+            font-weight:300;
+            font-size:4.2em;
+            margin:0;
+        }
+        
+        h3 {
+            font-weight:400;
+            padding-top:5px;
+        }
+        
+        img {
+            @include border-radius(50%);
+            height:207px;
+            border:3px solid #fff;
+            margin-right:85px;
+        }
+        
+        a  {
+            text-decoration: none;
+        }
+    }
 }
 
-nav #links li {
-    padding:22px;
+/* About -------------------------------------------------------------------*/
+
+#about {
+    position:relative;
+    
+    h2 {
+        font-weight:400;
+        display:table-cell;
+        @include box-sizing(border-box);
+        width:35%;
+        vertical-align:top;
+        padding-right:30px;
+    }
+    
+    #wide_photo {
+        height:100%;
+        display:table-cell;
+        @include box-sizing(border-box);
+        background-image:url("../images/wide_photo.jpg");
+        background-position:center;
+        @include background-size(cover);
+        @include border-radius(10px);
+    }
 }
 
-nav #logo {
-    position:absolute;
-    left:0px;
-    top:0px;
-    width:$nav-height;
-    height:$nav-height;
+/* Projects ----------------------------------------------------------------*/
+
+/* Experience --------------------------------------------------------------*/
+
+#experience {
+    
+    h3 {
+        margin-top:0.2em;
+        margin-bottom:1em;
+    }
+    
+    .col {
+        display:table-cell;
+        vertical-align:top;
+        width:33.33%;
+        height:100%;
+        @include box-sizing(border-box);
+    }
+    
+    .left-col {
+        padding-right:50px;
+        border-right:1px solid #222;
+    }
+    
+    .center-col {
+        padding:0 50px;
+    }
+    
+    .right-col {
+        padding-left:50px;
+        border-left:1px solid #222;
+    }
 }
 
-nav #social {
-    position:absolute;
-    right:0px;
-    top:0px;
+/* Contact -----------------------------------------------------------------*/
+
+#contact {
+    background:url('../images/congruent_pentagon.png') center center fixed;
     color:#FFF;
-    font-size:1em;
-    padding-right:8px;
-}
+    
+    h2 {
+        padding-bottom:1.2em;
+    }
+    
+    p {
+        padding-bottom:1em;
+    }
+    
+    #contact-info {
+        display:table-cell;
+        vertical-align:top;
+        padding-right:50px;
+    }
+    
+    #contact-form {
+        display:table-cell;
+        vertical-align:top;
+        width:100%;
+    }
+    
+    .input-form {
+        position:relative;
+        height:40px;
+        margin-bottom:7px;
+        background:orange;
+    }
+    
+    .textarea-form {
+        position:relative;
+        height:200px;
+        background:orange;
+    }
+    
+    label {
+        display:inline-block;
+        text-align:center;
+        width:38px;
+        font-size:20px;
+        line-height:20px;
+        padding:8.5px 0;
+        background-color:#FFF;
+        color:$primary-color;
+        border:1px solid #FFF;
+        position:absolute;
+        left:0px;
+        top:0px;
+        
+        @include single-transition(color 0.25s linear 0.5s);
+        @include single-transition(background 0.25s linear);
+    }
+    
+    input {
+        padding:5px;
+        padding-left:45px;
+        height:40px;
+        border:0;
+        outline:0;
+        width:100%;
+        @include box-sizing(border-box);
+    }
+    
+    textarea {
+        padding:10px;
+        padding-left:45px;
+        width:100%;
+        height:200px;
+        border:0;
+        outline:0;
+        @include box-sizing(border-box);
+        resize:none;
+    }
+    
+    .button {
+        @include border-radius(0);
+        font-family:lato;
+        border:1px solid #FFF;
+        background:#FFF;
+        color:$primary-color;
+        outline:none;
+        padding:10px;
+        margin-top:7px;
+        width:120px;
+        @include single-transition(color 0.25s linear 0.5s);
+        @include single-transition(background 0.25s linear);
 
-nav #social li {
-    padding:18px 10px 18px 0px;
-}
-
-nav li {
-    display:inline-block;
-    color:#FFF;
-}
-
-nav li a {
-    @include single-transition(color, 0.5s);
-}
-
-nav li a:hover {
-    color:$primary-accent-light;
+    }
+    
+    .button + .button {
+        margin-left:4px;
+    }
+    
+    .button:focus, .button:hover {
+        background:$primary-color;
+        color:#FFF;
+        @include single-transition(color 0.25s linear 0.5s);
+        @include single-transition(background 0.25s linear);
+    }
+    
+    input:focus + label, textarea:focus + label {
+        background-color:$primary-color;
+        color:#FFF;
+        @include single-transition(color 0.25s linear 0.5s);
+        @include single-transition(background 0.25s linear);
+    }
+    
+    #copyright {
+        text-align:center;
+        padding-bottom:20px;
+    }
 }
 
 /* -------------------------------------------------------------------------*/

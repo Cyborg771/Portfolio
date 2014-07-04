@@ -2,37 +2,115 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8' />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Scott Inglis | Interaction Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+    <title>Scott Inglis | Interaction Designer</title>
     <link rel='stylesheet' type='text/css' href='css/style.css'>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
     
-    <nav>
-        <div id="logo"></div>
+    <nav id="navigation">
         <div id="links">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="scroll" href="#header">Top</a></li>
+                <li><a class="scroll" href="#about">About</a></li>
+                <li><a class="scroll" href="#projects">Projects</a></li>
+                <li><a class="scroll" href="#experience">Experience</a></li>
+                <li><a class="scroll" href="#contact">Contact</a></li>
             </ul>
         </div>
         <div id="social">
             <ul>
                 <li><a href="https://twitter.com/Cyborg771"><i class="fa fa-twitter-square fa-2x"></i></a></li>
                 <li><a href="http://ca.linkedin.com/pub/scott-inglis/16/215/2a5"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                <li><a href="https://github.com/Cyborg771"><i class="fa fa-github-square fa-2x"></i></a></li>
+                <li><a href="https://www.facebook.com/Cyborg771"><i class="fa fa-facebook-square fa-2x"></i></a></li>
             </ul>
         </div>
     </nav>
     
-    <div id="main">
-        a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
+    <div id="header">
+        <div id="title">
+            <img src="images/profile.png">
+            <div id="title-text">
+                <h1>Scott Inglis</h1>
+                <h2>Interaction Designer</h2>
+                <a class="scroll" href="#about"><h3>Check Me Out <i class="fa fa-chevron-right"></i></h3></a>
+            </div>
+        </div>
     </div>
     
-    <script src='bower/jquery/dist/jquery.min.js'></script>
+    <section id="about">
+        <div class="content">
+            <h1>Hey there!</h1>
+            <div class="table-container">
+                <h2>I'm Scott and I'm a designer. A game designer, a user experience designer, a graphic designer, you name it. I have a fancy degree and everything! I've done work for some big companies like BlackBerry and Teekay and a lot of independent stuff as well. I'm motivated, passionate, and always excited to learn. Let's <a class="scroll" href="#contact">talk</a>.</h2>
+                <div id="wide_photo"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects">   
+    </section>
+    
+    <section id="experience">
+        <div class="content">
+            <h1>Professional Experience</h1>
+            <div class="table-container">
+                <div class="col left-col">
+                    <h2>BlackBerry | 2011</h2>
+                    <h3>Conceptual Interface Designer</h3>
+                    <p>I spent the entirety of 2011 working at Canadian tech giant BlackBerry creating a suite of software prototypes to demonstrate new interaction methods and possible features. I aided a team of skilled engineers and designers by creating interactive prototypes in Adobe Flash which could be used to communicate complex designs to upper management.</p>
+                </div>
+                <div class="col center-col">
+                    <h2>Teekay Shipping | 2010</h2>
+                    <h3>Social Media Coordinator</h3>
+                    <p>In the fall of 2010 I worked for a Canadian oil shipping company to assist them in creating a social media presence, adopting new media platforms for internal and external communication, and to facilitate their migration to a new intranet platform.</p>
+                </div>
+                <div class="col right-col">
+                    <h2>Independent Game Design | 2009-Present</h2>
+                    <h3>Designer, Programmer, Manager</h3>
+                    <p>In the last half decade I have taken my passion for video games and turned it into a creative hobby. I've created a handful of games for competitions, game jams, and personal enjoyment. A number of these games are displayed here on my portfolio and a full list of everything I've worked on is available <a href="/games">here</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <div class="content">
+            <div class="table-container">
+                <div id="contact-info">
+                    <h2>Scott Inglis</h2>
+                    <p><a href="mailto:sdcinglis@gmail.com" target="_blank">sdcinglis@gmail.com</a></p>
+                    <p><a href="tel:778-837-2819">778.837.2819</a></p>
+                    <p>Surrey, BC, Canada</p>
+                    <p><a href="http://sdcinglis.com/" target="_blank">sdcinglis.com</a></p>
+                </div>
+                
+                <form method="POST" name="contactform" action="" id="contact-form"> 
+                    <div class="input-form">
+                        <input type="text" id="name" name="name" placeholder="Name">
+                        <label for="name"><i class="fa fa-user"></i></label>
+                    </div>
+                    <div class="input-form">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <label for="email"><i class="fa fa-envelope"></i></label>
+                    </div>
+                    <div class="textarea-form">
+                        <textarea id="message" name="message" placeholder="Message"></textarea>
+                        <label for="message"><i class="fa fa-pencil"></i></label>
+                    </div>
+                    <input class="button" type="submit" value="Submit">
+                    <input class="button" type="reset" value="Reset"> 
+                </form>
+                
+            </div>
+        </div>
+        <div id="copyright">Copyright &copy; 2013 - Scott Inglis</div>
+    </section>
+    
+    <script src="bower/jquery/dist/jquery.min.js"></script>
+    <script src="bower/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
 </body>
 </html>

@@ -120,20 +120,21 @@ nav #social {
   top: 0px;
   color: #FFF;
   font-size: 1em;
+  padding-right: 8px;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 nav #social li {
   padding: 18px 10px 18px 0px;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 nav li {
   display: inline-block;
   color: #FFF;
 }
 
-/* line 77, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 nav li a {
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
@@ -141,7 +142,7 @@ nav li a {
   transition: color 0.5s;
 }
 
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 nav li a:hover {
   color: #b2fc90;
 }

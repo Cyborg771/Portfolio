@@ -66,51 +66,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Variables -------------------------------------------------------------- */
 /* Body ------------------------------------------------------------------- */
-/* line 18, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 body {
   font-family: lato;
   min-width: 940px;
   color: #555555;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 a {
   color: inherit;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 h1 {
   font-size: 2em;
   font-weight: 800;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 h3 {
   font-size: 1.17em;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .content {
   padding: 50px 150px;
 }
-/* line 44, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 .content h1 {
   margin-bottom: 40px;
 }
 
-/* line 49, ../sass/style.scss */
+/* Grid ------------------------------------------------------------------- */
+/* line 55, ../sass/style.scss */
 .table-container {
   display: table;
   table-layout: fixed;
 }
+/* line 59, ../sass/style.scss */
+.table-container .col-1-3, .table-container .col-2-3 {
+  display: table-cell;
+  vertical-align: top;
+  width: 33.33%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 67, ../sass/style.scss */
+.table-container .col-1-3 {
+  width: 33.33%;
+}
+/* line 71, ../sass/style.scss */
+.table-container .col-2-3 {
+  width: 66.66%;
+}
 
 /* Navigation ------------------------------------------------------------- */
-/* line 56, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 nav {
   background-color: #ff915d;
   position: fixed;
@@ -124,18 +143,18 @@ nav {
   box-shadow: inset 0px -1px 0px #e58153;
   border-bottom: 1px solid #ffc9b0;
 }
-/* line 69, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 nav #links {
   display: inline-block;
   font-weight: 300;
   font-size: 24px;
   margin-left: 150px;
 }
-/* line 75, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 nav #links li {
   padding: 22px;
 }
-/* line 80, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 nav #social {
   position: absolute;
   top: 0px;
@@ -145,16 +164,16 @@ nav #social {
   padding-right: 8px;
   margin-right: 150px;
 }
-/* line 89, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 nav #social li {
   padding: 18px 10px 18px 0px;
 }
-/* line 94, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 nav li {
   display: inline-block;
   color: #FFF;
 }
-/* line 98, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 nav li a {
   text-decoration: none;
   -webkit-transition: color 0.5s;
@@ -162,22 +181,22 @@ nav li a {
   -o-transition: color 0.5s;
   transition: color 0.5s;
 }
-/* line 103, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 nav li a:hover {
   color: #ffc9b0;
 }
 
 /* Header ------------------------------------------------------------------*/
-/* line 111, ../sass/style.scss */
+/* line 133, ../sass/style.scss */
 #header {
   background: url("../images/congruent_pentagon.png") center center fixed;
   padding: 0 150px;
 }
-/* line 115, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 #header #title {
   position: relative;
 }
-/* line 118, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 #header #title #title-text {
   display: inline-block;
   text-align: center;
@@ -185,24 +204,24 @@ nav li a:hover {
   bottom: 10px;
   color: #FFF;
 }
-/* line 126, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 #header #title h1 {
   font-weight: 300;
   font-size: 8em;
   margin: 0 0 10px;
 }
-/* line 132, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 #header #title h2 {
   font-weight: 300;
   font-size: 4.2em;
   margin: 0;
 }
-/* line 138, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 #header #title h3 {
   font-weight: 400;
   padding-top: 5px;
 }
-/* line 143, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 #header #title img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -213,7 +232,7 @@ nav li a:hover {
   border: 3px solid #fff;
   margin-right: 65px;
 }
-/* line 150, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 #header #title a {
   text-decoration: none;
   display: inline-block;
@@ -222,35 +241,24 @@ nav li a:hover {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 156, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 #header #title a:hover {
   padding-left: 75px;
   color: #ffc9b0;
 }
 
 /* About -------------------------------------------------------------------*/
-/* line 165, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 #about {
   position: relative;
 }
-/* line 168, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 #about h2 {
   font-weight: 400;
-  display: table-cell;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 35%;
-  vertical-align: top;
   padding-right: 30px;
 }
-/* line 177, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 #about #wide_photo {
-  height: 100%;
-  display: table-cell;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   background-image: url("../images/wide_photo.jpg");
   background-position: center;
   -webkit-background-size: cover;
@@ -266,57 +274,35 @@ nav li a:hover {
 
 /* Projects ----------------------------------------------------------------*/
 /* Experience --------------------------------------------------------------*/
-/* line 194, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 #experience #pro_experience {
   margin-bottom: 50px;
 }
-/* line 198, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 #experience h3 {
   margin-top: 0.2em;
   margin-bottom: 1em;
 }
-/* line 203, ../sass/style.scss */
-#experience .col {
-  display: table-cell;
-  vertical-align: top;
-  width: 33.33%;
-  height: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* line 211, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 #experience .left-col {
-  padding-right: 50px;
+  padding-right: 30px;
   border-right: 1px solid #555555;
 }
-/* line 216, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 #experience .center-col {
-  padding: 0 50px;
+  padding: 0 30px;
 }
-/* line 220, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 #experience .right-col {
-  padding-left: 50px;
+  padding-left: 30px;
   border-left: 1px solid #555555;
 }
-/* line 225, ../sass/style.scss */
+/* line 232, ../sass/style.scss */
 #experience #education-text {
-  display: table-cell;
-  width: 66.66%;
-  padding-left: 50px;
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  padding-left: 30px;
 }
-/* line 233, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 #experience #education-image {
-  display: table-cell;
-  width: 33.33%;
-  vertical-align: top;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   background-image: url("../images/sfu_photo.jpg");
   background-position: center;
   -webkit-background-size: cover;
@@ -331,45 +317,45 @@ nav li a:hover {
 }
 
 /* Contact -----------------------------------------------------------------*/
-/* line 247, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 #contact {
   background: url("../images/congruent_pentagon.png") center center fixed;
   color: #FFF;
 }
-/* line 251, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 #contact h2 {
   padding-bottom: 1.2em;
 }
-/* line 255, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 #contact p {
   padding-bottom: 1em;
 }
-/* line 259, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 #contact #contact-info {
   display: table-cell;
   vertical-align: top;
   padding-right: 50px;
 }
-/* line 265, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 #contact #contact-form {
   display: table-cell;
   vertical-align: top;
   width: 100%;
 }
-/* line 271, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 #contact .input-form {
   position: relative;
   height: 40px;
   margin-bottom: 7px;
   background: orange;
 }
-/* line 278, ../sass/style.scss */
+/* line 277, ../sass/style.scss */
 #contact .textarea-form {
   position: relative;
   height: 200px;
   background: orange;
 }
-/* line 284, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 #contact label {
   display: inline-block;
   text-align: center;
@@ -383,17 +369,12 @@ nav li a:hover {
   position: absolute;
   left: 0px;
   top: 0px;
-  -webkit-transition: color 0.25s linear, 1s;
-  -webkit-transition-delay: 0.5s, 0s;
-  -moz-transition: color 0.25s linear 0.5s, 1s;
-  -o-transition: color 0.25s linear 0.5s, 1s;
-  transition: color 0.25s linear 0.5s, 1s;
-  -webkit-transition: background 0.25s linear, 1s;
-  -moz-transition: background 0.25s linear, 1s;
-  -o-transition: background 0.25s linear, 1s;
-  transition: background 0.25s linear, 1s;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
-/* line 302, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 #contact input {
   padding: 5px;
   padding-left: 45px;
@@ -405,8 +386,9 @@ nav li a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 312, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 #contact textarea {
+  font-family: lato;
   padding: 10px;
   padding-left: 45px;
   width: 100%;
@@ -418,7 +400,7 @@ nav li a:hover {
   box-sizing: border-box;
   resize: none;
 }
-/* line 323, ../sass/style.scss */
+/* line 322, ../sass/style.scss */
 #contact .button {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -433,49 +415,34 @@ nav li a:hover {
   padding: 10px;
   margin-top: 7px;
   width: 120px;
-  -webkit-transition: color 0.25s linear, 1s;
-  -webkit-transition-delay: 0.5s, 0s;
-  -moz-transition: color 0.25s linear 0.5s, 1s;
-  -o-transition: color 0.25s linear 0.5s, 1s;
-  transition: color 0.25s linear 0.5s, 1s;
-  -webkit-transition: background 0.25s linear, 1s;
-  -moz-transition: background 0.25s linear, 1s;
-  -o-transition: background 0.25s linear, 1s;
-  transition: background 0.25s linear, 1s;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
-/* line 338, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 #contact .button + .button {
   margin-left: 4px;
 }
-/* line 342, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 #contact .button:focus, #contact .button:hover {
   background: #ff915d;
   color: #FFF;
-  -webkit-transition: color 0.25s linear, 1s;
-  -webkit-transition-delay: 0.5s, 0s;
-  -moz-transition: color 0.25s linear 0.5s, 1s;
-  -o-transition: color 0.25s linear 0.5s, 1s;
-  transition: color 0.25s linear 0.5s, 1s;
-  -webkit-transition: background 0.25s linear, 1s;
-  -moz-transition: background 0.25s linear, 1s;
-  -o-transition: background 0.25s linear, 1s;
-  transition: background 0.25s linear, 1s;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
-/* line 349, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 #contact input:focus + label, #contact textarea:focus + label {
   background-color: #ff915d;
   color: #FFF;
-  -webkit-transition: color 0.25s linear, 1s;
-  -webkit-transition-delay: 0.5s, 0s;
-  -moz-transition: color 0.25s linear 0.5s, 1s;
-  -o-transition: color 0.25s linear 0.5s, 1s;
-  transition: color 0.25s linear 0.5s, 1s;
-  -webkit-transition: background 0.25s linear, 1s;
-  -moz-transition: background 0.25s linear, 1s;
-  -o-transition: background 0.25s linear, 1s;
-  transition: background 0.25s linear, 1s;
+  -webkit-transition: all 0.25s linear;
+  -moz-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
-/* line 356, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 #contact #copyright {
   text-align: center;
   padding-bottom: 20px;

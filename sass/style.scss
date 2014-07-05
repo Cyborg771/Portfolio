@@ -5,9 +5,10 @@
 
 /* Variables -------------------------------------------------------------- */
 
-$primary-color:#e16d39;
-$primary-accent-dark:#c76032;
-$primary-accent-light:#ff7c41;
+$primary-color:#ff915d;
+$primary-accent-dark:#e58153;
+$primary-accent-light:#ffc9b0;
+$text-color:#555;
 
 $nav-height:70px;
 $side-padding:150px;
@@ -17,19 +18,16 @@ $side-padding:150px;
 body {
     font-family:lato;
     min-width:940px;
+    color:$text-color;
 }
 
 a {
     color:inherit;
 }
 
-h1, h2, h3 {
-    font-weight:800;
-}
-
 h1 {
     font-size:2em;
-    font-weight:500;
+    font-weight:800;
 }
 
 h2 {
@@ -65,7 +63,7 @@ nav {
     z-index:1;
     
     //Two tone border, box-shadow for dark line and border-bottom for light line
-    box-shadow:inset 0 -1px 0 $primary-accent-dark;
+    @include single-box-shadow($primary-accent-dark, 0px, -1px, 0px, false, true );
     border-bottom:1px solid $primary-accent-light;
 
     #links {
@@ -86,6 +84,7 @@ nav {
         color:#FFF;
         font-size:1em;
         padding-right:8px;
+        margin-right:$side-padding;
 
         li {
             padding:18px 10px 18px 0px;
@@ -102,7 +101,7 @@ nav {
         }
 
         a:hover {
-            color:#ff996c;
+            color:$primary-accent-light;
         }
     }
 }
@@ -127,7 +126,7 @@ nav {
         h1 {
             font-weight:300;
             font-size:8em;
-            margin:0;
+            margin:0 0 10px;
         }
         
         h2 {
@@ -143,13 +142,20 @@ nav {
         
         img {
             @include border-radius(50%);
-            height:207px;
+            height:224px;
             border:3px solid #fff;
-            margin-right:85px;
+            margin-right:65px;
         }
         
         a  {
             text-decoration: none;
+            display:inline-block;
+            @include single-transition(all, 0.5s, ease-in-out);
+        }
+        
+        a:hover {
+            padding-left:75px;
+            color:$primary-accent-light;
         }
     }
 }
@@ -185,6 +191,10 @@ nav {
 
 #experience {
     
+    #pro_experience {
+        margin-bottom:50px;
+    }
+    
     h3 {
         margin-top:0.2em;
         margin-bottom:1em;
@@ -200,7 +210,7 @@ nav {
     
     .left-col {
         padding-right:50px;
-        border-right:1px solid #222;
+        border-right:1px solid $text-color;
     }
     
     .center-col {
@@ -209,7 +219,26 @@ nav {
     
     .right-col {
         padding-left:50px;
-        border-left:1px solid #222;
+        border-left:1px solid $text-color;
+    }
+    
+    #education-text {
+        display:table-cell;
+        width:66.66%;
+        padding-left:50px;
+        vertical-align:top;
+        @include box-sizing(border-box);
+    }
+    
+    #education-image {
+        display:table-cell;
+        width:33.33%;
+        vertical-align:top;
+        @include box-sizing(border-box);
+        background-image:url("../images/sfu_photo.jpg");
+        background-position:center;
+        @include background-size(cover);
+        @include border-radius(10px);
     }
 }
 

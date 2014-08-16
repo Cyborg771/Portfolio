@@ -66,70 +66,70 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* Variables -------------------------------------------------------------- */
 /* Body ------------------------------------------------------------------- */
-/* line 22, ../sass/style.scss */
+/* line 22, ../sass/desktop.scss */
 body {
   font-family: lato;
-  min-width: 940px;
   color: #555555;
 }
 
-/* line 28, ../sass/style.scss */
+/* line 27, ../sass/desktop.scss */
 a {
   color: inherit;
 }
 
-/* line 32, ../sass/style.scss */
+/* line 31, ../sass/desktop.scss */
 h1 {
   font-size: 2em;
   font-weight: 800;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 36, ../sass/desktop.scss */
 h2 {
   font-size: 1.5em;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 40, ../sass/desktop.scss */
 h3 {
   font-size: 1.17em;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 44, ../sass/desktop.scss */
 .content {
-  padding: 50px 150px;
+  padding: 50px 13%;
+  line-height: 1.75em;
 }
-/* line 48, ../sass/style.scss */
+/* line 48, ../sass/desktop.scss */
 .content h1 {
   margin-bottom: 40px;
 }
 
 /* Grid ------------------------------------------------------------------- */
-/* line 55, ../sass/style.scss */
+/* line 55, ../sass/desktop.scss */
 .table-container {
   display: table;
   table-layout: fixed;
+  width: 100%;
 }
-/* line 59, ../sass/style.scss */
+/* line 60, ../sass/desktop.scss */
 .table-container .col-1-3, .table-container .col-2-3 {
   display: table-cell;
   vertical-align: top;
-  width: 33.33%;
   height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 67, ../sass/style.scss */
+/* line 67, ../sass/desktop.scss */
 .table-container .col-1-3 {
   width: 33.33%;
 }
-/* line 71, ../sass/style.scss */
+/* line 71, ../sass/desktop.scss */
 .table-container .col-2-3 {
   width: 66.66%;
 }
 
 /* Navigation ------------------------------------------------------------- */
-/* line 78, ../sass/style.scss */
+/* line 78, ../sass/desktop.scss */
 nav {
   background-color: #ff915d;
   position: fixed;
@@ -143,18 +143,18 @@ nav {
   box-shadow: inset 0px -1px 0px #e58153;
   border-bottom: 1px solid #ffc9b0;
 }
-/* line 91, ../sass/style.scss */
+/* line 91, ../sass/desktop.scss */
 nav #links {
   display: inline-block;
   font-weight: 300;
   font-size: 24px;
-  margin-left: 150px;
+  margin-left: 13%;
 }
-/* line 97, ../sass/style.scss */
+/* line 97, ../sass/desktop.scss */
 nav #links li {
-  padding: 22px;
+  padding: 22px 15px;
 }
-/* line 102, ../sass/style.scss */
+/* line 102, ../sass/desktop.scss */
 nav #social {
   position: absolute;
   top: 0px;
@@ -162,18 +162,18 @@ nav #social {
   color: #FFF;
   font-size: 1em;
   padding-right: 8px;
-  margin-right: 150px;
+  margin-right: 13%;
 }
-/* line 111, ../sass/style.scss */
+/* line 111, ../sass/desktop.scss */
 nav #social li {
   padding: 18px 10px 18px 0px;
 }
-/* line 116, ../sass/style.scss */
+/* line 116, ../sass/desktop.scss */
 nav li {
   display: inline-block;
   color: #FFF;
 }
-/* line 120, ../sass/style.scss */
+/* line 120, ../sass/desktop.scss */
 nav li a {
   text-decoration: none;
   -webkit-transition: color 0.5s;
@@ -181,22 +181,22 @@ nav li a {
   -o-transition: color 0.5s;
   transition: color 0.5s;
 }
-/* line 125, ../sass/style.scss */
+/* line 125, ../sass/desktop.scss */
 nav li a:hover {
   color: #ffc9b0;
 }
 
 /* Header ------------------------------------------------------------------*/
-/* line 133, ../sass/style.scss */
+/* line 133, ../sass/desktop.scss */
 #header {
   background: url("../images/congruent_pentagon.png") center center fixed;
-  padding: 0 150px;
+  padding: 0 13%;
 }
-/* line 137, ../sass/style.scss */
+/* line 137, ../sass/desktop.scss */
 #header #title {
   position: relative;
 }
-/* line 140, ../sass/style.scss */
+/* line 140, ../sass/desktop.scss */
 #header #title #title-text {
   display: inline-block;
   text-align: center;
@@ -204,24 +204,24 @@ nav li a:hover {
   bottom: 10px;
   color: #FFF;
 }
-/* line 148, ../sass/style.scss */
+/* line 148, ../sass/desktop.scss */
 #header #title h1 {
   font-weight: 300;
   font-size: 8em;
   margin: 0 0 10px;
 }
-/* line 154, ../sass/style.scss */
+/* line 154, ../sass/desktop.scss */
 #header #title h2 {
   font-weight: 300;
   font-size: 4.2em;
   margin: 0;
 }
-/* line 160, ../sass/style.scss */
+/* line 160, ../sass/desktop.scss */
 #header #title h3 {
   font-weight: 400;
   padding-top: 5px;
 }
-/* line 165, ../sass/style.scss */
+/* line 165, ../sass/desktop.scss */
 #header #title img {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -232,7 +232,7 @@ nav li a:hover {
   border: 3px solid #fff;
   margin-right: 65px;
 }
-/* line 172, ../sass/style.scss */
+/* line 172, ../sass/desktop.scss */
 #header #title a {
   text-decoration: none;
   display: inline-block;
@@ -241,23 +241,23 @@ nav li a:hover {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-/* line 178, ../sass/style.scss */
+/* line 178, ../sass/desktop.scss */
 #header #title a:hover {
   padding-left: 75px;
   color: #ffc9b0;
 }
 
 /* About -------------------------------------------------------------------*/
-/* line 187, ../sass/style.scss */
+/* line 187, ../sass/desktop.scss */
 #about {
   position: relative;
 }
-/* line 190, ../sass/style.scss */
+/* line 190, ../sass/desktop.scss */
 #about h2 {
   font-weight: 400;
   padding-right: 30px;
 }
-/* line 195, ../sass/style.scss */
+/* line 195, ../sass/desktop.scss */
 #about #wide_photo {
   background-image: url("../images/wide_photo.jpg");
   background-position: center;
@@ -273,35 +273,171 @@ nav li a:hover {
 }
 
 /* Projects ----------------------------------------------------------------*/
+/* line 206, ../sass/desktop.scss */
+#projects .project_header {
+  background-position: center;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  height: 900px;
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+/* line 215, ../sass/desktop.scss */
+#projects .project_mask {
+  background-position: center;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  height: 900px;
+  width: 100%;
+  position: absolute;
+}
+/* line 223, ../sass/desktop.scss */
+#projects .project_name {
+  padding-top: 150px;
+  padding-left: 150px;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.5) 2px 2px 6px;
+}
+/* line 229, ../sass/desktop.scss */
+#projects .project_name h1 {
+  font-size: 5em;
+}
+/* line 233, ../sass/desktop.scss */
+#projects .project_name h2 {
+  font-size: 2em;
+}
+/* line 237, ../sass/desktop.scss */
+#projects .project_name h3 {
+  font-size: 1.5em;
+  padding-top: 10px;
+}
+/* line 242, ../sass/desktop.scss */
+#projects .project_name a {
+  text-decoration: none;
+}
+/* line 247, ../sass/desktop.scss */
+#projects .project_detail {
+  display: none;
+}
+/* line 250, ../sass/desktop.scss */
+#projects .project_detail .table-container {
+  padding-bottom: 50px;
+}
+/* line 253, ../sass/desktop.scss */
+#projects .project_detail .table-container:last-child {
+  padding-bottom: 0px;
+}
+/* line 257, ../sass/desktop.scss */
+#projects .project_detail .project_description {
+  padding-right: 30px;
+}
+/* line 261, ../sass/desktop.scss */
+#projects .project_detail .project_gallery + .project_description {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+/* line 266, ../sass/desktop.scss */
+#projects .project_detail .project_gallery {
+  background-image: url("../images/wide_photo.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 273, ../sass/desktop.scss */
+#projects .project_detail h1 {
+  font-size: 3.5em;
+  color: #ff915d;
+}
+/* line 278, ../sass/desktop.scss */
+#projects .project_detail .collapse {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  display: block;
+  line-height: 15px;
+}
+/* line 288, ../sass/desktop.scss */
+#projects #emcee .project_header {
+  background: url(../images/emcee_banner.jpg) no-repeat center fixed;
+}
+/* line 289, ../sass/desktop.scss */
+#projects #emcee .project_mask {
+  background: url(../images/emcee_banner_mask.jpg) no-repeat center fixed;
+}
+/* line 293, ../sass/desktop.scss */
+#projects #rocket_blocks .project_header {
+  background: url(../images/rocket_blocks_banner.jpg) no-repeat center fixed;
+}
+/* line 294, ../sass/desktop.scss */
+#projects #rocket_blocks .project_mask {
+  background: url(../images/rocket_blocks_banner_mask.jpg) no-repeat center fixed;
+}
+/* line 298, ../sass/desktop.scss */
+#projects #compositions .project_header {
+  background: url(../images/compositions_banner.jpg) no-repeat center fixed;
+}
+/* line 299, ../sass/desktop.scss */
+#projects #compositions .project_mask {
+  background: url(../images/compositions_banner_mask.jpg) no-repeat center fixed;
+}
+/* line 303, ../sass/desktop.scss */
+#projects #bb10 .project_header {
+  background: url(../images/bb10_banner.jpg) no-repeat center fixed;
+}
+/* line 304, ../sass/desktop.scss */
+#projects #bb10 .project_mask {
+  background: url(../images/bb10_banner_mask.jpg) no-repeat center fixed;
+}
+/* line 308, ../sass/desktop.scss */
+#projects #wordworks .project_header {
+  background: url(../images/wordworks_banner.jpg) no-repeat center fixed;
+}
+/* line 309, ../sass/desktop.scss */
+#projects #wordworks .project_mask {
+  background: url(../images/wordworks_banner_mask.jpg) no-repeat center fixed;
+}
+
 /* Experience --------------------------------------------------------------*/
-/* line 209, ../sass/style.scss */
+/* line 317, ../sass/desktop.scss */
 #experience #pro_experience {
   margin-bottom: 50px;
 }
-/* line 213, ../sass/style.scss */
+/* line 321, ../sass/desktop.scss */
 #experience h3 {
   margin-top: 0.2em;
   margin-bottom: 1em;
 }
-/* line 218, ../sass/style.scss */
+/* line 326, ../sass/desktop.scss */
 #experience .left-col {
   padding-right: 30px;
   border-right: 1px solid #555555;
 }
-/* line 223, ../sass/style.scss */
+/* line 331, ../sass/desktop.scss */
 #experience .center-col {
   padding: 0 30px;
 }
-/* line 227, ../sass/style.scss */
+/* line 335, ../sass/desktop.scss */
 #experience .right-col {
   padding-left: 30px;
   border-left: 1px solid #555555;
 }
-/* line 232, ../sass/style.scss */
+/* line 340, ../sass/desktop.scss */
 #experience #education-text {
   padding-left: 30px;
 }
-/* line 236, ../sass/style.scss */
+/* line 344, ../sass/desktop.scss */
 #experience #education-image {
   background-image: url("../images/sfu_photo.jpg");
   background-position: center;
@@ -317,45 +453,45 @@ nav li a:hover {
 }
 
 /* Contact -----------------------------------------------------------------*/
-/* line 246, ../sass/style.scss */
+/* line 354, ../sass/desktop.scss */
 #contact {
   background: url("../images/congruent_pentagon.png") center center fixed;
   color: #FFF;
 }
-/* line 250, ../sass/style.scss */
+/* line 358, ../sass/desktop.scss */
 #contact h2 {
   padding-bottom: 1.2em;
 }
-/* line 254, ../sass/style.scss */
+/* line 362, ../sass/desktop.scss */
 #contact p {
   padding-bottom: 1em;
 }
-/* line 258, ../sass/style.scss */
+/* line 366, ../sass/desktop.scss */
 #contact #contact-info {
   display: table-cell;
   vertical-align: top;
   padding-right: 50px;
 }
-/* line 264, ../sass/style.scss */
+/* line 372, ../sass/desktop.scss */
 #contact #contact-form {
   display: table-cell;
   vertical-align: top;
   width: 100%;
 }
-/* line 270, ../sass/style.scss */
+/* line 378, ../sass/desktop.scss */
 #contact .input-form {
   position: relative;
   height: 40px;
   margin-bottom: 7px;
   background: orange;
 }
-/* line 277, ../sass/style.scss */
+/* line 385, ../sass/desktop.scss */
 #contact .textarea-form {
   position: relative;
   height: 200px;
   background: orange;
 }
-/* line 283, ../sass/style.scss */
+/* line 391, ../sass/desktop.scss */
 #contact label {
   display: inline-block;
   text-align: center;
@@ -374,7 +510,7 @@ nav li a:hover {
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-/* line 300, ../sass/style.scss */
+/* line 408, ../sass/desktop.scss */
 #contact input {
   padding: 5px;
   padding-left: 45px;
@@ -386,7 +522,7 @@ nav li a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 310, ../sass/style.scss */
+/* line 418, ../sass/desktop.scss */
 #contact textarea {
   font-family: lato;
   padding: 10px;
@@ -400,7 +536,7 @@ nav li a:hover {
   box-sizing: border-box;
   resize: none;
 }
-/* line 322, ../sass/style.scss */
+/* line 430, ../sass/desktop.scss */
 #contact .button {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -420,11 +556,11 @@ nav li a:hover {
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-/* line 336, ../sass/style.scss */
+/* line 444, ../sass/desktop.scss */
 #contact .button + .button {
   margin-left: 4px;
 }
-/* line 340, ../sass/style.scss */
+/* line 448, ../sass/desktop.scss */
 #contact .button:focus, #contact .button:hover {
   background: #ff915d;
   color: #FFF;
@@ -433,7 +569,7 @@ nav li a:hover {
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-/* line 346, ../sass/style.scss */
+/* line 454, ../sass/desktop.scss */
 #contact input:focus + label, #contact textarea:focus + label {
   background-color: #ff915d;
   color: #FFF;
@@ -442,7 +578,7 @@ nav li a:hover {
   -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
-/* line 352, ../sass/style.scss */
+/* line 460, ../sass/desktop.scss */
 #contact #copyright {
   text-align: center;
   padding-bottom: 20px;

@@ -1,0 +1,555 @@
+/* Imports -----------------------------------------------------------------*/
+/* line 17, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Variables -------------------------------------------------------------- */
+/* Body ------------------------------------------------------------------- */
+/* line 22, ../sass/mobile.scss */
+body {
+  font-family: lato;
+  color: #555555;
+}
+
+/* line 27, ../sass/mobile.scss */
+a {
+  color: #ffaa82;
+}
+
+/* line 31, ../sass/mobile.scss */
+h1 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+/* line 36, ../sass/mobile.scss */
+h2 {
+  font-size: 1.5em;
+}
+
+/* line 40, ../sass/mobile.scss */
+h3 {
+  font-size: 1.17em;
+}
+
+/* line 44, ../sass/mobile.scss */
+.content {
+  padding: 50px 13%;
+  line-height: 1.75em;
+}
+/* line 48, ../sass/mobile.scss */
+.content h1 {
+  margin-bottom: 40px;
+}
+
+/* line 53, ../sass/mobile.scss */
+a.shift_link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 60, ../sass/mobile.scss */
+a.shift_link:hover {
+  color: #ffcab1;
+}
+
+/* Grid ------------------------------------------------------------------- */
+/* line 66, ../sass/mobile.scss */
+.table-container {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 71, ../sass/mobile.scss */
+.table-container .col {
+  display: table-cell;
+  vertical-align: top;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0px 30px;
+}
+/* line 79, ../sass/mobile.scss */
+.table-container .col:first-child {
+  padding-left: 0px;
+}
+/* line 83, ../sass/mobile.scss */
+.table-container .col:last-child {
+  padding-right: 0px;
+}
+/* line 87, ../sass/mobile.scss */
+.table-container .col-1 {
+  width: 100%;
+}
+/* line 91, ../sass/mobile.scss */
+.table-container .col-1-2 {
+  width: 50%;
+}
+/* line 95, ../sass/mobile.scss */
+.table-container .col-1-3 {
+  width: 33.33%;
+}
+/* line 99, ../sass/mobile.scss */
+.table-container .col-2-3 {
+  width: 66.66%;
+}
+/* line 103, ../sass/mobile.scss */
+.table-container .col-1-4 {
+  width: 25%;
+}
+/* line 107, ../sass/mobile.scss */
+.table-container .col-3-4 {
+  width: 75%;
+}
+/* line 111, ../sass/mobile.scss */
+.table-container .col-1-5 {
+  width: 20%;
+}
+/* line 115, ../sass/mobile.scss */
+.table-container .col-2-5 {
+  width: 40%;
+}
+/* line 119, ../sass/mobile.scss */
+.table-container .col-3-5 {
+  width: 60%;
+}
+/* line 123, ../sass/mobile.scss */
+.table-container .col-4-5 {
+  width: 80%;
+}
+/* line 127, ../sass/mobile.scss */
+.table-container .col-1-6 {
+  width: 16.66%;
+}
+/* line 131, ../sass/mobile.scss */
+.table-container .col-5-6 {
+  width: 83.33%;
+}
+
+/* Navigation ------------------------------------------------------------- */
+/* line 138, ../sass/mobile.scss */
+nav {
+  background-color: #ffaa82;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  z-index: 2;
+  color: #FFF;
+  -webkit-box-shadow: inset 0px -1px 0px #ff905c;
+  -moz-box-shadow: inset 0px -1px 0px #ff905c;
+  box-shadow: inset 0px -1px 0px #ff905c;
+  border-bottom: 1px solid #ffcab1;
+}
+/* line 152, ../sass/mobile.scss */
+nav #nav-button {
+  color: #FFF;
+}
+/* line 154, ../sass/mobile.scss */
+nav #nav-button i {
+  padding: 18px 0px 0px 13%;
+}
+/* line 159, ../sass/mobile.scss */
+nav #nav-links {
+  display: none;
+  font-weight: 300;
+  font-size: 24px;
+  margin-left: 13%;
+  background: #ffaa82;
+  width: 200px;
+  border-bottom: 1px solid #ffcab1;
+}
+/* line 168, ../sass/mobile.scss */
+nav #nav-links li {
+  padding: 22px;
+  display: block;
+  border: 1px solid #ffcab1;
+  border-bottom: 0px;
+}
+/* line 176, ../sass/mobile.scss */
+nav #social {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: #FFF;
+  font-size: 1em;
+  margin-right: 13%;
+}
+/* line 184, ../sass/mobile.scss */
+nav #social li {
+  padding: 18px 0px 18px 10px;
+}
+/* line 189, ../sass/mobile.scss */
+nav li {
+  display: inline-block;
+}
+/* line 192, ../sass/mobile.scss */
+nav li a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  -moz-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+/* line 198, ../sass/mobile.scss */
+nav li a:hover {
+  color: #ffcab1;
+}
+
+/* line 204, ../sass/mobile.scss */
+#project_navigation {
+  display: none;
+}
+
+/* line 208, ../sass/mobile.scss */
+#project_navigation.show {
+  top: 70px;
+}
+
+/* Header ------------------------------------------------------------------*/
+/* line 214, ../sass/mobile.scss */
+#header {
+  background: url("../images/congruent_pentagon.png") center center fixed;
+  padding: 0 13%;
+}
+/* line 218, ../sass/mobile.scss */
+#header #title {
+  position: relative;
+  text-align: center;
+}
+/* line 222, ../sass/mobile.scss */
+#header #title #title-text {
+  display: inline-block;
+  text-align: center;
+  color: #FFF;
+}
+/* line 228, ../sass/mobile.scss */
+#header #title h1 {
+  font-weight: 300;
+  font-size: 2.9em;
+  margin: 0 0 10px;
+}
+/* line 234, ../sass/mobile.scss */
+#header #title h2 {
+  font-weight: 300;
+  font-size: 1.5em;
+  margin: 0;
+}
+/* line 240, ../sass/mobile.scss */
+#header #title h3 {
+  font-weight: 400;
+  padding-top: 5px;
+}
+/* line 245, ../sass/mobile.scss */
+#header #title img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  height: 80px;
+  border: 3px solid #fff;
+  display: block;
+  margin: 0 auto;
+  vertical-align: top;
+}
+
+/* About -------------------------------------------------------------------*/
+/* line 258, ../sass/mobile.scss */
+#about {
+  position: relative;
+  text-align: center;
+}
+/* line 262, ../sass/mobile.scss */
+#about h2 {
+  font-weight: 300;
+  font-size: 1em;
+}
+/* line 267, ../sass/mobile.scss */
+#about #wide_photo {
+  display: none;
+}
+/* line 271, ../sass/mobile.scss */
+#about #about_text {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+
+/* Projects ----------------------------------------------------------------*/
+/* line 281, ../sass/mobile.scss */
+#projects .project_header {
+  background-position: center;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  height: 190px;
+  width: 100%;
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+/* line 292, ../sass/mobile.scss */
+#projects .project_mask {
+  visibility: hidden;
+}
+/* line 296, ../sass/mobile.scss */
+#projects .project_name {
+  padding: 30px 13%;
+  position: absolute;
+  text-shadow: black 0px 0px 8px, black 0px 0px 8px;
+}
+/* line 301, ../sass/mobile.scss */
+#projects .project_name h1 {
+  font-size: 2.0em;
+}
+/* line 305, ../sass/mobile.scss */
+#projects .project_name h2 {
+  font-size: 1.5em;
+}
+/* line 309, ../sass/mobile.scss */
+#projects .project_name h3 {
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+/* line 314, ../sass/mobile.scss */
+#projects .project_name a {
+  text-decoration: none;
+  color: #FFF;
+}
+/* line 320, ../sass/mobile.scss */
+#projects .project_detail {
+  display: none;
+}
+/* line 323, ../sass/mobile.scss */
+#projects .project_detail .table-container {
+  padding-bottom: 60px;
+}
+/* line 327, ../sass/mobile.scss */
+#projects .project_detail .project_image {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 336, ../sass/mobile.scss */
+#projects .project_detail .project_gallery {
+  height: 150px;
+  font-size: 0;
+}
+/* line 340, ../sass/mobile.scss */
+#projects .project_detail .project_gallery .project_image {
+  display: block;
+  height: 100px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+/* line 347, ../sass/mobile.scss */
+#projects .project_detail .project_gallery .project_image:last-child {
+  margin-right: 0;
+}
+/* line 352, ../sass/mobile.scss */
+#projects .project_detail h1 {
+  padding: 10px 0;
+  line-height: 1em;
+  font-size: 2.0em;
+  color: #ffaa82;
+}
+/* line 359, ../sass/mobile.scss */
+#projects .project_detail .project_description {
+  display: block;
+  width: 100%;
+  padding: 0;
+}
+/* line 365, ../sass/mobile.scss */
+#projects .project_detail .collapse {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  display: block;
+  line-height: 15px;
+}
+/* line 376, ../sass/mobile.scss */
+#projects #emcee .project_header {
+  background: url(../images/emcee/overlay.jpg) no-repeat center;
+}
+/* line 380, ../sass/mobile.scss */
+#projects #rocket_blocks .project_header {
+  background: url(../images/rocket_blocks/overlay.jpg) no-repeat center;
+}
+/* line 384, ../sass/mobile.scss */
+#projects #compositions .project_header {
+  background: url(../images/compositions/overlay.jpg) no-repeat center;
+}
+/* line 388, ../sass/mobile.scss */
+#projects #bb10 .project_header {
+  background: url(../images/bb10/overlay.jpg) no-repeat center;
+}
+/* line 392, ../sass/mobile.scss */
+#projects #wordworks .project_header {
+  background: url(../images/wordworks/overlay.jpg) no-repeat center;
+}
+
+/* Experience --------------------------------------------------------------*/
+/* line 400, ../sass/mobile.scss */
+#experience #pro_experience {
+  margin-bottom: 50px;
+  display: block;
+}
+/* line 404, ../sass/mobile.scss */
+#experience #pro_experience .col {
+  padding: 0 0 30px 0;
+}
+/* line 408, ../sass/mobile.scss */
+#experience #pro_experience .col:last-child {
+  padding-bottom: 0;
+}
+/* line 414, ../sass/mobile.scss */
+#experience h3 {
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+/* line 419, ../sass/mobile.scss */
+#experience .left-col {
+  display: block;
+  width: 100%;
+}
+/* line 424, ../sass/mobile.scss */
+#experience .center-col {
+  display: block;
+  width: 100%;
+  padding-left: 0px;
+}
+/* line 430, ../sass/mobile.scss */
+#experience .right-col {
+  display: block;
+  width: 100%;
+  padding-left: 0px;
+}
+/* line 436, ../sass/mobile.scss */
+#experience #education-image {
+  display: none;
+}
+/* line 440, ../sass/mobile.scss */
+#experience #education-text {
+  width: 100%;
+  padding: 0;
+}
+
+/* Contact -----------------------------------------------------------------*/
+/* line 448, ../sass/mobile.scss */
+#contact {
+  background: url("../images/congruent_pentagon.png") center center fixed;
+  color: #FFF;
+}
+/* line 452, ../sass/mobile.scss */
+#contact h2 {
+  padding-bottom: 1.2em;
+}
+/* line 456, ../sass/mobile.scss */
+#contact p {
+  padding-bottom: 1em;
+}
+/* line 460, ../sass/mobile.scss */
+#contact a {
+  color: inherit;
+}
+/* line 464, ../sass/mobile.scss */
+#contact #contact-info {
+  text-align: center;
+  display: table-cell;
+  font-size: 1em;
+  width: 100%;
+}
+/* line 471, ../sass/mobile.scss */
+#contact #contact-form {
+  display: none;
+}
+/* line 475, ../sass/mobile.scss */
+#contact #copyright {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* -------------------------------------------------------------------------*/
